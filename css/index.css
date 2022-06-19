@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Variables */
+
+:root{
+    --navBarColor:#fff;
+    --colorBotton:#29BB89;
+    --bottonItemHeader:#4E9F3D;
+}
+
+/* Estilizando el header */
+
+header {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container__header {
+    width:100%;
+    height:100vh;
+    background-image: url(../img/Slice\ 1.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.container {
+    width:100%;
+    height:80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__container__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:95%;
+    height:45px;
+    background: var(--navBarColor);
+    border-radius: 20px;
+    position:fixed;
+    z-index: 10;
+    box-shadow: 0 0 10px -5px;
+}
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding:0 10px;
+    margin-left: -30px;
+}
+
+.img__log {
+    width:30px;
+}
+
+/* Menu__desplagable and navegation */
+
+.container__nav {
+    opacity: 1;
+}
+
+.submenu1{
+	list-style: none;
+	position: absolute;
+	background: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .2s;
+    border-radius: 4px;
+    box-shadow: 0 0 10px -5px;
+}
+
+.submenu1 a:hover {
+    background: #f2f2f2;
+}
+
+.submenu1 li a{
+	display: block;
+	padding: 15px;
+	color: #000;
+}
+
+.content__nav li:hover .submenu1{
+	visibility: visible;
+	opacity: 1;
+}
+
+.submenu2{
+	list-style: none;
+	position: absolute;
+	background: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .2s;
+    border-radius:4px;
+    box-shadow: 0 0 10px -5px;
+}
+
+.submenu2 a:hover {
+    background: #f2f2f2;
+}
+
+.submenu2 li a{
+	display: block;
+	padding: 15px;
+	color: #000;
+}
+
+.content__nav li:hover .submenu2{
+	visibility: visible;
+	opacity: 1;
+}
+
+.content__nav {
+    display: flex;
+    list-style: none;
+}
+
+.content__nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.content__nav .active__home {
+    color: #fff;
+    background: #29BB89;
+    padding: 0 10px;
+    border-radius:20px;
+    font-weight: 700;
+}
+
+/* Input */
+
+input {
+    width:250px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 3px;
+    background: transparent;
+}
+
+input::placeholder {
+    font-weight: 600;
+    color: black;
+    text-transform: capitalize;
+    padding: 3px;
+}
+
+input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    background-color: crimson;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+}
+
+.container__input {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -40px;
+}
+
+/* Dark mode */
+
+.dark__mode {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-left: -60px;
+}
+
+/* Log in and register */
+
+.container__LogIn__register a {
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.btn__logIn {
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000;
+    background: #f2f2f2;
+    padding: 2px 20px;
+}
+
+.--modify {
+    background: var(--colorBotton);
+    padding: 2px 20px;
+    color: white;
+}
+
+/* Alerts */
+
+.container__alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Whatsapp Service */
+
+.container__whatsapp {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.container__whatsapp .bi-whatsapp {
+    background: #29BB89;
+    color: white;
+    border-radius:50%;
+    padding: 10px;
+    width:50px;
+    height:50px;
+    box-shadow: 0 0 10px -5px black;
+    cursor: pointer;
+}
+
+.menu-Icon {
+    display:none;
+}
+
+.signIc {
+    display: none;
+}
+
+.iconSearch {
+    display: none;
+}
+
+.iconUsers {
+    display: none;
+}
+
+/* Ligth black */
+
+.ligthBlack {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.397);
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity .3s ease;
+    pointer-events: none;
+}

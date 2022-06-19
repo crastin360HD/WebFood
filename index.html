@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastFood Web</title>
+    <!-- FontAwesome Custon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Box Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custon CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/mainContent.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    
+    <!-- HeaderPrincipal -->
+
+    <header>
+
+        <div class="container__vector">
+        
+            <div class="container__header">
+    
+                <!-- Contenido del header -->
+    
+                <div class="container">
+                    <!-- *Menu -->
+                    <div class="menu__container__header">
+    
+                        <div class="logo">
+                            <h3 class="foodText">FastFood</h3>
+                            <img class="img__log" src="./svg/Food.svg" alt="">
+                        </div>
+    
+                        <div class="container__nav">
+                            <nav id="menu" class="nav">
+                                <ul class="content__nav">
+            
+                                    <li><a class="active__home" href="#home">Home</a>
+                                    <li><a href="#">Pedidos<i class='bx bx-chevron-down'></i></a>
+                                        <ul class="submenu1">
+                                                <li><a href="#">Precios</a>
+                                                <li><a href="#">Ofertas</a>
+                                                <li><a href="#">Platos</a>	
+                                        </ul>
+                                    <li><a href="#features">Domicilios<i class='bx bx-chevron-down'></i></a>
+                                            <ul class="submenu2">
+                                                <li><a href="#">Tiempo</a>
+                                                <li><a href="#">Ubicacion</a>
+                                            </ul>	
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- Input -->
+    
+                        <div class="container__input">
+                            <input name="inputSearch" type="search" placeholder="¿que deseas buscar?">
+                            <i class='bx bx-search'></i>
+                        </div>
+    
+                        <!-- Dark mode -->
+    
+                        <div class="dark__mode">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                            </svg>
+                        </div>
+    
+                        <!-- Log in and register -->
+    
+                        <div class="logIn__register">
+                            <div class="container__LogIn__register">
+                                <a class="--modify btn__logIn" href="#">sign up</a>
+                                <a class="btn__logIn" href="#">log in</a>
+                            </div>
+                        </div>
+    
+                        <!-- Alerts -->
+    
+                        <div class="container__alert">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter"><path d="m5.705 3.71-1.41-1.42C1 5.563 1 7.935 1 11h1l1-.063C3 8.009 3 6.396 5.705 3.71zm13.999-1.42-1.408 1.42C21 6.396 21 8.009 21 11l2-.063c0-3.002 0-5.374-3.296-8.647zM12 22a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22zm7-7.414V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.184 4.073 5 6.783 5 10v4.586l-1.707 1.707A.996.996 0 0 0 3 17v1a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-1a.996.996 0 0 0-.293-.707L19 14.586z"></path></svg>
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter"><path d="M12 22a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22zm7-7.414V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.185 4.074 5 6.783 5 10v4.586l-1.707 1.707A.996.996 0 0 0 3 17v1a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-1a.996.996 0 0 0-.293-.707L19 14.586z"></path></svg> -->
+                        </div>
+
+                        <!--* Icons de movil -->
+
+                        <!-- Menu Icon-movil -->
+                        
+                        <div class="menu-Icon">
+                            <img src="./img/bx-menu.svg" alt="">
+                        </div>
+
+                        <!-- Icon Search-movil -->
+
+                        <div class="iconSearch">
+                            <img class="--onSearch" src="./svg/bx-search-alt.svg" alt="">
+                        </div>
+
+                        <!-- Users-icon-movil -->
+                        <div class="iconUsers">
+                            <img class="user" src="./svg/User.svg" alt="">
+                        </div>
+
+                        <!-- Sign Up-icon -->
+
+                        <div class="signIc">
+                            <img class="login" src="./svg/Login.svg" alt="">
+                        </div>
+
+                    </div>
+                    
+                    
+                </div>
+    
+                <!-- Whatsapp service -->
+    
+                <div class="container__whatsapp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                    </svg>
+                </div>
+    
+                <!-- Main Pots -->
+    
+                <div class="main__post">
+                    <div class="container__main__post">
+                        <div class="items__post">
+                            <h1>descubre el sabor universal</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti rem labore beatae maxime laboriosam debitis eligendi in temporibus nemo quas animi, enim cupiditate, ex voluptate eius, nostrum unde ad deleniti iste at saepe vel praesentium quis? Sapiente officiis in perferendis!</p>
+                            <a href="#">sube a premium</a>
+                        </div>
+    
+                        <div class="img__post">
+                            <img src="./img/Cheft__Mujer.png" alt="">
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        
+    </header>
+    <br>
+    <!-- Contenido -->
+
+    <div class="container__contenido">
+        <div class="content">
+            <div class="buy__content">
+                <!-- Elemento -->
+                <div class="buy__block">
+                    <div class="buy__img">
+                        <img src="./img/Pizza.png" alt="" class="img__buy">
+                    </div>
+                    <div class="info__buy">
+                        <h3>Producto</h3>
+                        <h4>Costo: <span>$38</span></h4>
+                    </div>
+                    <div class="buy__botton">
+                        <h5>buy<i class="fas fa-shopping-cart"></i></h5>
+                    </div>
+                </div>
+
+                <div class="buy__block">
+                    <div class="buy__img">
+                        <img src="./img/Perro caliente.png" alt="" class="img__buy">
+                    </div>
+                    <div class="info__buy">
+                        <h3>Producto</h3>
+                        <h4>Costo: <span>$38</span></h4>
+                    </div>
+                    <div class="buy__botton">
+                        <h5>buy<i class="fas fa-shopping-cart"></i></h5>
+                    </div>
+                </div>
+
+                <div class="buy__block">
+                    <div class="buy__img">
+                        <img src="./img/Salchipapa.jpg" alt="" class="img__buy">
+                    </div>
+                    <div class="info__buy">
+                        <h3>Producto</h3>
+                        <h4>Costo: <span>$38</span></h4>
+                    </div>
+                    <div class="buy__botton">
+                        <h5>buy<i class="fas fa-shopping-cart"></i></h5>
+                    </div>
+                </div>
+
+                <div class="buy__block">
+                    <div class="buy__img">
+                        <img src="./img/Tacos.png" alt="" class="img__buy">
+                    </div>
+                    <div class="info__buy">
+                        <h3>Producto</h3>
+                        <h4>Costo: <span>$38</span></h4>
+                    </div>
+                    <div class="buy__botton">
+                        <h5>buy<i class="fas fa-shopping-cart"></i></h5>
+                    </div>
+                </div>
+
+                <div class="buy__block">
+                    <div class="buy__img">
+                        <img src="./img/Hamburguesa.png" alt="" class="img__buy">
+                    </div>
+                    <div class="info__buy">
+                        <h3>Producto</h3>
+                        <h4>Costo: <span>$38</span></h4>
+                    </div>
+                    <div class="buy__botton">
+                        <h5>buy<i class="fas fa-shopping-cart"></i></h5>
+                    </div>
+                </div>
+
+                <div class="buy__block">
+                    <div class="buy__img">
+                        <img src="./img/Carne asada.png" alt="" class="img__buy">
+                    </div>
+                    <div class="info__buy">
+                        <h3>Producto</h3>
+                        <h4>Costo: <span>$38</span></h4>
+                    </div>
+                    <div class="buy__botton">
+                        <h5>buy<i class="fas fa-shopping-cart"></i></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido publicitario -->
+
+    <div class="container__publicitario">
+        <div class="content__publicitario">
+
+            <div class="post__public">
+                <div class="container__post__public">
+                    <div class="item__post__public">
+                        <img src="./img/Cheft 1.png" alt="" class="image__item__post">
+                    </div>
+                </div>
+                <div class="container__title">
+                    <h2 class="title__publicitario">descubre tu <span>sabor</span></h2>
+                </div>
+                <img class="image__vector" src="./img/VectorCart.svg" alt="">
+            </div>
+            <!-- Slider Section -->
+
+            <div class="block__slider">
+                <div class="blockTitle">
+                    <h2>Tenemos Mas Platos Para Ti</h2>
+                </div>
+                
+                <div class="container-slider">
+                    <div class="slider" id="slider">
+                        <div class="slider__seccion">
+                            <img src="./img/img-slider/Img1.png" alt="" class="slider__img">
+                        </div>
+                        <div class="slider__seccion">
+                            <img src="./img/img-slider/Img2.png" alt="" class="slider__img">
+                        </div>
+                        <div class="slider__seccion">
+                            <img src="./img/img-slider/Img3.png" alt="" class="slider__img">
+                        </div>
+                        <div class="slider__seccion">
+                            <img src="./img/img-slider/Img4.png" alt="" class="slider__img">
+                        </div>
+                    </div>
+                    <div id="btn-right" class="slider__btn slider__btn--right">&#62;</div>
+                    <div id="btn-left" class="slider__btn slider__btn--left">&#60;</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery IMG -->
+
+    <main class="main">
+
+        <!-- Section -->
+
+        <section class="gallery">
+
+            <!-- FigurePicture -->
+            
+            <figure class="gallery__picture gallery__picture--g1">
+				<img src="./img/img-gallery/G1.jpg" class="gallery__img">
+			</figure>
+
+			<figure class="gallery__picture gallery__picture--g2">
+				<img src="./img/img-gallery/G2.jpg" class="gallery__img">
+			</figure>
+
+			<figure class="gallery__picture gallery__picture--g3">
+				<img src="./img/img-gallery/G3.jpg" class="gallery__img">
+			</figure>
+
+			<figure class="gallery__picture gallery__picture--g4">
+				<img src="./img/img-gallery/G4.jpg" class="gallery__img">
+			</figure>
+
+			<figure class="gallery__picture gallery__picture--g5">
+				<img src="./img/img-gallery/G5.jpg" class="gallery__img">
+			</figure>
+
+			<figure class="gallery__picture gallery__picture--g6">
+				<img src="./img/img-gallery/G6.jpg" class="gallery__img">
+			</figure>
+
+			<figure class="gallery__picture gallery__picture--g7">
+				<img src="./img/img-gallery/G7.jpg" class="gallery__img">
+			</figure>
+
+			<figure class="gallery__picture gallery__picture--g8">
+				<img src="./img/img-gallery/G8.jpg" class="gallery__img">
+			</figure>
+
+			
+        </section>
+    </main>
+
+    <!-- Section Ubication -->
+
+    <div class="ubication">
+        <div class="container__ubication">
+            <div class="containerONE">
+                <h2 class="titleUbication">Nuestros pedidos llegan a cualquier parte del mundo</h2>
+                <!-- <img src="./img/Img ubication.png" alt=""> -->
+            </div>
+
+            <div class="containerimg">
+                <img class="imgUbication" src="./img/undraw_map_re_60yf 1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container__footer">
+            <div class="containerPerfil">
+                <div class="items">
+                    <div class="user">
+                        <h3>user</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="containerContac">
+                <div class="contacts">
+                    <h2>Menu</h2>
+                    <ul>
+                        <a href="#"></a><li>Carne asada</li>
+                        <a href="#"></a><li>Taco mexicano</li>
+                        <a href="#"></a><li>Pollo frito</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <h2>Contacts</h2>
+                    <ul>
+                        <a href="#"></a><li>Food.facebook.com</li>
+                        <a href="#"></a><li>Food.3binstagram.com</li>
+                        <a href="#"></a><li>Food.Twitter.com</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <h2>About</h2>
+                    <ul>
+                        <a href="#"></a><li>+57 #0000000</li>
+                        <a href="#"></a><li>Ciudad: Bogota</li>
+                        <a href="#"></a><li>Food@gmail.com</li>
+                        <a href="#"></a><li>Servicio profesional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Direccion -->
+        <div class="direction">
+            <div class="container__direction">
+                <h2>Direccion 20-50-5B</h2>
+                <p>&copy;Derechos reservados 2020-2022</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ligth black -->
+
+    <div id="ligthShow" class="ligthBlack"></div>
+
+</body>
+
+<!-- Custon JS -->
+
+<script src="./js/main.js"></script>
+<script src="./js/menu.js"></script>
+
+</html>
