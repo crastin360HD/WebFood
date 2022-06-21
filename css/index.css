@@ -16,6 +16,16 @@
     --bottonItemHeader:#4E9F3D;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;
+    background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color:#53DA00;
+    border-radius: 10px;
+}
+
 /* Estilizando el header */
 
 header {

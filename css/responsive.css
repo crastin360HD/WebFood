@@ -78,7 +78,7 @@
     }
 
     .done {
-        height: 380px;
+        height: 350px;
     }
 
     .done.ligthBlack {
@@ -197,6 +197,21 @@
         width:30px;
     }
 
+    /* LigthBox Responsy */
+
+    .img-light {
+        flex-direction: column-reverse;
+    }
+
+    .agregarImagen {
+        width: 90%;
+        height: 500px;
+    }
+
+    .close {
+        margin-top: 20px;
+    }
+
 }
 
 @media screen and (max-width:1120px){
@@ -278,6 +293,7 @@
     .menu__container__header {
         width:80%;
     }
+
 }
 
 /* *Direccion vertical para el contentpublic */
@@ -304,6 +320,12 @@
     .slider {
         height:100%;
     }
+
+    .agregarImagen {
+        width: 90%;
+        height: 400px;
+    }
+
 }
 
 /* Resposive 500px */
@@ -529,6 +551,12 @@
     .contacts h2 {
         font-size:1.1em
     }
+
+    .agregarImagen {
+        width: 90%;
+        height: 300px;
+    }
+
 }
 
 @media screen and (max-width:300px){

@@ -34,3 +34,39 @@ let containInput = document.querySelector(".container__input");
 iconBuscar.addEventListener("click", ()=>{
     containInput.classList.toggle("showInput")
 })
+
+/* LightBox programing */
+
+/* Declaramos las variables */
+
+const imagenes = document.querySelectorAll(".gallery__img");
+
+const imagenesLight = document.querySelector(".agregarImagen");
+
+const contenedorLight = document.querySelector(".img-light");
+
+const figureImg = document.querySelectorAll(".gallery__picture");
+
+/* FuncionAParecerImagen */
+
+imagenes.forEach(imagen =>{
+    imagen.addEventListener('click',()=>{
+        aparecerImagen(imagen.getAttribute('src'))
+    })
+})
+
+const aparecerImagen = (imagen)=>{
+    imagenesLight.src = imagen;
+    contenedorLight.classList.toggle("show")
+    imagenesLight.classList.toggle("showImage")
+}
+
+contenedorLight.addEventListener("click", (e)=>{
+    if(e.target !== imagenesLight){
+        contenedorLight.classList.toggle("show")
+        imagenesLight.classList.toggle("showImage")
+    }
+})
+
+console.log(imagenes);
+console.log(contenedorLight);
