@@ -14,6 +14,7 @@
     --navBarColor:#fff;
     --colorBotton:#29BB89;
     --bottonItemHeader:#4E9F3D;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -182,6 +183,7 @@ input::-webkit-search-cancel-button {
     width:10px;
     height:10px;
     border-radius:50%;
+    margin-right: 20px;
 }
 
 .container__input {

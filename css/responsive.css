@@ -528,8 +528,17 @@
         height:220px;
     }
 
+    /* *Modal register */
+    
 
+    form {
+        width: 80%;
+        margin: 15px auto;
+    }
 
+    .register img {
+        display: none;
+    }
 }
 
 /* Responsive 400px */

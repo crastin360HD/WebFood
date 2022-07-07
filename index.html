@@ -131,7 +131,7 @@
                         <div class="items__post">
                             <h1>Discovery the universal flavor</h1>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti rem labore beatae maxime laboriosam debitis eligendi in temporibus nemo quas animi, enim cupiditate, ex voluptate eius, nostrum unde ad deleniti iste at saepe vel praesentium quis? Sapiente officiis in perferendis!</p>
-                            <a href="#">Go premium</a>
+                            <a id="btnPremium" href="#registerPage">Go premium</a>
                         </div>
     
                         <div class="img__post">
@@ -144,8 +144,36 @@
         </div>
         
     </header>
+
+    <!-- Modal Register -->
+
+    <div id="registerPage" class="register">
+        <img src="./svg/undraw_my_password_re_ydq7.svg" alt="" class="img__svg">
+        <form id="form" action="">
+            <div class="form">
+                <h1>Register</h1>
+                <div class="grupo">
+                    <input class="inputText inputGlobal" type="text" id="name" required><span class="barra"></span>
+                    <label for="nombre"><i class='bx bxs-user'></i>Name</label>
+                </div>
+                <div class="grupo">
+                    <input class="inputEmail inputGlobal" type="email" id="email" required><span class="barra"></span>
+                    <label for="email"><i class='bx bx-mail-send'></i>Email</label>
+                </div>
+                <div class="grupo">
+                    <input class="inputPass inputGlobal" type="password" id="password" required><span class="barra"></span>
+                    <label for="password"><i class='bx bxs-lock-alt'></i>Password</label>
+                </div>
+            </div>
+            <button type="submit">To suscribe</button>
+            <p class="warnings" id="warnings"></p>
+        </form>
+        <span id="closeRegister">x</span>
+    </div>
     <br>
     <!-- Contenido -->
+    
+    <h1>Our products for sale</h1>
 
     <div class="container__contenido">
         <div class="content">

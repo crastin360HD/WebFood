@@ -92,3 +92,20 @@ contenedorLight.addEventListener("click", (e)=>{
 
 console.log(imagenes);
 console.log(contenedorLight);
+
+/* Show Register */
+
+let register = document.querySelector(".register");
+
+let btn__Premium = document.querySelector("#btnPremium");
+
+let btnClose = document.querySelector("#closeRegister");
+
+btn__Premium.addEventListener("click", ()=>{
+    register.classList.add("showRegister");
+});
+
+btnClose.addEventListener("click", ()=>{
+    register.classList.remove("showRegister");
+})
+
