@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Box Icon -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <!-- Custon CSS -->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/mainContent.css">
@@ -40,16 +42,16 @@
                                 <ul class="content__nav">
             
                                     <li><a class="active__home" href="#home">Home</a>
-                                    <li><a href="#">Pedidos<i class='bx bx-chevron-down'></i></a>
+                                    <li><a href="#">Orders<i class='bx bx-chevron-down'></i></a>
                                         <ul class="submenu1">
-                                                <li><a href="#">Precios</a>
-                                                <li><a href="#">Ofertas</a>
-                                                <li><a href="#">Platos</a>	
+                                                <li><a href="#">Prices</a>
+                                                <li><a href="#">Offerts</a>
+                                                <li><a href="#">Plates</a>	
                                         </ul>
-                                    <li><a href="#features">Domicilios<i class='bx bx-chevron-down'></i></a>
+                                    <li><a href="#features">Domiciles<i class='bx bx-chevron-down'></i></a>
                                             <ul class="submenu2">
-                                                <li><a href="#">Tiempo</a>
-                                                <li><a href="#">Ubicacion</a>
+                                                <li><a href="#">Time</a>
+                                                <li><a href="#">Ubication</a>
                                             </ul>	
                                 </ul>
                             </nav>
@@ -57,16 +59,15 @@
                         <!-- Input -->
     
                         <div class="container__input">
-                            <input name="inputSearch" type="search" placeholder="¿que deseas buscar?">
+                            <input name="inputSearch" type="search" placeholder="Look for you flavor?">
                             <i class='bx bx-search'></i>
                         </div>
+                        <span id="closeSarch">X</span>
     
                         <!-- Dark mode -->
     
                         <div class="dark__mode">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
-                                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-                            </svg>
+                            <img id="darkModeIcon" src="./svg/bxs-moon.svg" alt="">
                         </div>
     
                         <!-- Log in and register -->
@@ -101,13 +102,13 @@
 
                         <!-- Users-icon-movil -->
                         <div class="iconUsers">
-                            <img class="user" src="./svg/User.svg" alt="">
+                            <img id="userIcon" class="user" src="./svg/User.svg" alt="">
                         </div>
 
                         <!-- Sign Up-icon -->
 
                         <div class="signIc">
-                            <img class="login" src="./svg/Login.svg" alt="">
+                            <img id="signIcon" class="login" src="./svg/Login.svg" alt="">
                         </div>
 
                     </div>
@@ -128,9 +129,9 @@
                 <div class="main__post">
                     <div class="container__main__post">
                         <div class="items__post">
-                            <h1>descubre el sabor universal</h1>
+                            <h1>Discovery the universal flavor</h1>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti rem labore beatae maxime laboriosam debitis eligendi in temporibus nemo quas animi, enim cupiditate, ex voluptate eius, nostrum unde ad deleniti iste at saepe vel praesentium quis? Sapiente officiis in perferendis!</p>
-                            <a href="#">sube a premium</a>
+                            <a href="#">Go premium</a>
                         </div>
     
                         <div class="img__post">
@@ -155,8 +156,8 @@
                         <img src="./img/Pizza.png" alt="" class="img__buy">
                     </div>
                     <div class="info__buy">
-                        <h3>Producto</h3>
-                        <h4>Costo: <span>$38</span></h4>
+                        <h3>Product</h3>
+                        <h4>Price: <span>$38</span></h4>
                     </div>
                     <div class="buy__botton">
                         <h5>buy<i class="fas fa-shopping-cart"></i></h5>
@@ -168,8 +169,8 @@
                         <img src="./img/Perro caliente.png" alt="" class="img__buy">
                     </div>
                     <div class="info__buy">
-                        <h3>Producto</h3>
-                        <h4>Costo: <span>$38</span></h4>
+                        <h3>Product</h3>
+                        <h4>Price: <span>$20</span></h4>
                     </div>
                     <div class="buy__botton">
                         <h5>buy<i class="fas fa-shopping-cart"></i></h5>
@@ -181,8 +182,8 @@
                         <img src="./img/Salchipapa.jpg" alt="" class="img__buy">
                     </div>
                     <div class="info__buy">
-                        <h3>Producto</h3>
-                        <h4>Costo: <span>$38</span></h4>
+                        <h3>Product</h3>
+                        <h4>Price: <span>$25</span></h4>
                     </div>
                     <div class="buy__botton">
                         <h5>buy<i class="fas fa-shopping-cart"></i></h5>
@@ -194,8 +195,8 @@
                         <img src="./img/Tacos.png" alt="" class="img__buy">
                     </div>
                     <div class="info__buy">
-                        <h3>Producto</h3>
-                        <h4>Costo: <span>$38</span></h4>
+                        <h3>Product</h3>
+                        <h4>Price: <span>$15</span></h4>
                     </div>
                     <div class="buy__botton">
                         <h5>buy<i class="fas fa-shopping-cart"></i></h5>
@@ -207,8 +208,8 @@
                         <img src="./img/Hamburguesa.png" alt="" class="img__buy">
                     </div>
                     <div class="info__buy">
-                        <h3>Producto</h3>
-                        <h4>Costo: <span>$38</span></h4>
+                        <h3>Product</h3>
+                        <h4>Price: <span>$30</span></h4>
                     </div>
                     <div class="buy__botton">
                         <h5>buy<i class="fas fa-shopping-cart"></i></h5>
@@ -220,8 +221,8 @@
                         <img src="./img/Carne asada.png" alt="" class="img__buy">
                     </div>
                     <div class="info__buy">
-                        <h3>Producto</h3>
-                        <h4>Costo: <span>$38</span></h4>
+                        <h3>Product</h3>
+                        <h4>Price: <span>$35</span></h4>
                     </div>
                     <div class="buy__botton">
                         <h5>buy<i class="fas fa-shopping-cart"></i></h5>
@@ -243,7 +244,7 @@
                     </div>
                 </div>
                 <div class="container__title">
-                    <h2 class="title__publicitario">descubre tu <span>sabor</span></h2>
+                    <h2 class="title__publicitario">Discovery you<span> flavor</span></h2>
                 </div>
                 <img class="image__vector" src="./img/VectorCart.svg" alt="">
             </div>
@@ -251,7 +252,7 @@
 
             <div class="block__slider">
                 <div class="blockTitle">
-                    <h2>Tenemos Mas Platos Para Ti</h2>
+                    <h2>We have more disches for you</h2>
                 </div>
                 
                 <div class="container-slider">
@@ -304,7 +305,7 @@
     <div class="ubication">
         <div class="container__ubication">
             <div class="containerONE">
-                <h2 class="titleUbication">Nuestros pedidos llegan a cualquier parte del mundo</h2>
+                <h2 class="titleUbication">Our orders reach anywhere in the world</h2>
                 <!-- <img src="./img/Img ubication.png" alt=""> -->
             </div>
 
@@ -339,9 +340,9 @@
                 <div class="contacts">
                     <h2>Menu</h2>
                     <ul>
-                        <a href="#"></a><li>Carne asada</li>
-                        <a href="#"></a><li>Taco mexicano</li>
-                        <a href="#"></a><li>Pollo frito</li>
+                        <a href="#"></a><li>Grilled meat</li>
+                        <a href="#"></a><li>Mexican taco</li>
+                        <a href="#"></a><li>Fried Chikeck</li>
                     </ul>
                 </div>
                 <div class="contacts">
@@ -358,7 +359,6 @@
                         <a href="#"></a><li>+57 #0000000</li>
                         <a href="#"></a><li>Ciudad: Bogota</li>
                         <a href="#"></a><li>Food@gmail.com</li>
-                        <a href="#"></a><li>Servicio profesional</li>
                     </ul>
                 </div>
             </div>

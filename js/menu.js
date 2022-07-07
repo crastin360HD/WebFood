@@ -18,7 +18,8 @@ iconMenu.addEventListener("click", ()=>{
 ligthBlack.addEventListener("click", ()=>{
     menu.classList.remove("done");
     ligthBlack.style.opacity = "0";
-    etiquetas.style.opacity = "0";
+    etiquetas.style.opacity = "0"; /* !Importante */
+    ligthBlack.style.pointerEvents = "none";
 })
 
 console.log(menu)
@@ -30,9 +31,30 @@ let iconBuscar = document.querySelector(".--onSearch");
 
 let containInput = document.querySelector(".container__input");
 
+let closeIcon = document.getElementById("closeSarch");
+
+/* Icons a ocultar */
+
+let darkIcon = document.getElementById("darkModeIcon");
+
+let userIcon = document.getElementById("userIcon");
+
+let UserSignUp = document.getElementById("signIcon");
 
 iconBuscar.addEventListener("click", ()=>{
-    containInput.classList.toggle("showInput")
+    containInput.classList.add("showInput");
+    darkIcon.style.opacity = "0";
+    closeIcon.style.opacity = "1";
+    userIcon.style.opacity = "0";
+    UserSignUp.style.opacity = "0"
+})
+
+closeIcon.addEventListener("click", ()=> {
+    containInput.classList.remove("showInput")
+        darkIcon.style.opacity = "1";
+        closeIcon.style.opacity = "0";
+        userIcon.style.opacity = "1";
+        UserSignUp.style.opacity = "1"
 })
 
 /* LightBox programing */

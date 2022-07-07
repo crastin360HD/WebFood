@@ -36,6 +36,10 @@
             display: block;
         }
 
+        #closeSarch {
+            display: block;
+        }
+
         /* Header de 1400px */
 
         .menu__container__header {
@@ -123,6 +127,7 @@
     .menu-Icon {
         top: 10px;
         right: 10px;
+        cursor: pointer;
     }
 
     .container__alert {
@@ -145,12 +150,11 @@
     .showInput {
         transform: translateX(0);
         opacity: 1;
-        width: 230px;
+        width: 95%;
         background: white;
         padding: 5px 10px;
         z-index: 10;
         box-shadow: 0 0 10px -5px;
-        
     }
 
     .container__input input[placeholder]{
@@ -168,6 +172,26 @@
 
     .bx-search {
         display: none;
+    }
+
+    #closeSarch {
+        position: absolute;
+        background: red;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:10px;
+        color: white;
+        font-weight: bold;
+        bottom: 10px;
+        left: 160px;
+        cursor: pointer;
+        opacity: 0;
+        box-shadow: 0 0 20px -10px black;
     }
 
     .dark__mode {
@@ -549,7 +573,7 @@
     }
 
     .contacts h2 {
-        font-size:1.1em
+        font-size:1.1em;
     }
 
     .agregarImagen {
@@ -567,5 +591,11 @@
 
     .title__publicitario {
         font-size: 1.4em
+    }
+}
+
+@media screen and (max-height:300px){
+    #closeSarch{
+        top: 10px;
     }
 }
