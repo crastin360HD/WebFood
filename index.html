@@ -151,16 +151,19 @@
         <img src="./svg/undraw_my_password_re_ydq7.svg" alt="" class="img__svg">
         <form id="form" action="">
             <div class="form">
-                <h1 class="titleRegister">Register</h1>
-                <div class="grupo">
+                <div class="title__close__register">
+                    <h1 class="titleRegister">Register</h1>
+                    <span id="closeRegister">x</span>
+                </div>
+                <div class="grupo One">
                     <input class="inputText inputGlobal" type="text" id="name" required><span class="barra"></span>
                     <label for="nombre"><i class='bx bxs-user'></i>Name</label>
                 </div>
-                <div class="grupo">
+                <div class="grupo Two">
                     <input class="inputEmail inputGlobal" type="email" id="email" required><span class="barra"></span>
                     <label for="email"><i class='bx bx-mail-send'></i>Email</label>
                 </div>
-                <div class="grupo">
+                <div class="grupo Three">
                     <input class="inputPass inputGlobal" type="password" id="password" required><span class="barra"></span>
                     <label for="password"><i class='bx bxs-lock-alt'></i>Password</label>
                 </div>
@@ -168,7 +171,7 @@
             <button type="submit">To suscribe</button>
             <p class="warnings" id="warnings"></p>
         </form>
-        <span id="closeRegister">x</span>
+        
     </div>
     <br>
     <!-- Contenido -->
