@@ -103,9 +103,11 @@ let btnClose = document.querySelector("#closeRegister");
 
 btn__Premium.addEventListener("click", ()=>{
     register.classList.add("showRegister");
+    menu.style.opacity = "0";
 });
 
 btnClose.addEventListener("click", ()=>{
     register.classList.remove("showRegister");
+    menu.style.opacity = "1";
 })
 
