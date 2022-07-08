@@ -564,6 +564,7 @@
         position: fixed;
         height: 95%;
         margin: 15px auto;
+        transition: all .3s ease;
     }
 
     .register img {
@@ -655,7 +656,7 @@
     }
 }
 
-@media screen and (max-height:400px){
+@media screen and (max-height:500px){
     .register img {
         display: none;
     }
@@ -665,6 +666,6 @@
     }
 
     form {
-        height: 120%;
+        height: 140%;
     }
 }
