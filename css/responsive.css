@@ -562,7 +562,7 @@
     form {
         width: 95%;
         position: fixed;
-        height: 120%;
+        height: 95%;
         margin: 15px auto;
     }
 
@@ -662,5 +662,9 @@
 
     .titleRegister {
         font-size: 1.3em;
+    }
+
+    form {
+        height: 120%;
     }
 }
