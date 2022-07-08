@@ -669,3 +669,9 @@
         height: 140%;
     }
 }
+
+@media screen and (max-height:300px){
+    .register {
+        height: 140vh;
+    }
+}
