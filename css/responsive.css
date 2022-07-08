@@ -243,7 +243,15 @@
     /* Acomodamos de tamaño la imagen pricipal */
 
     .img__post img {
-        display:none
+        display:none;
+    }
+
+    .items__post {
+        max-width: 70%;
+    }
+
+    .container__main__post {
+        height: 80%;
     }
 
     /* Contenido publicitario */
@@ -556,27 +564,14 @@
         display: none;
     }
 
-    .title__close__register {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px;
-    }
-
-    .title__close__register h1 {
-        font-size: 1.5em;
-    }
-
     /* Estos desaparecen */
 
     .Two {
-        display: none;
+        display: block;
     }
 
     .Three {
-        display: none;
+        display: block;
     }
 
     button {
@@ -657,20 +652,6 @@
 @media screen and (max-height:400px){
     .register img {
         display: none;
-    }
-
-    form {
-        width: 80%;
-        height: 100%;
-    }
-
-    .form {
-        width: 80%;
-    }
-
-    #closeRegister {
-        right: 50px;
-        top: 10px;
     }
 
     .titleRegister {
